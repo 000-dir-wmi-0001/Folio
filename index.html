@@ -16,6 +16,7 @@
     <!-- Stylesheet -->
     <style>
 /* Global Styles */
+/* Global Styles */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -271,7 +272,38 @@ section.active {
     .about-content {
         flex-direction: column;
     }
+
+    .projects-grid {
+        display: block;
+    }
+
+    .project-card {
+        margin-bottom: 2rem;
+    }
 }
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .about-content {
+        padding: 2rem 1rem;
+    }
+
+    .projects-grid {
+        padding: 2rem 1rem;
+    }
+}
+
 /* Center icons within the project cards */
 .project-card .project-info {
     text-align: center;
@@ -468,6 +500,7 @@ section.active {
     <!-- JavaScript -->
     <script >
 // Add active class for scroll animation
+// Add active class for scroll animation
 window.addEventListener('scroll', function () {
     const sections = document.querySelectorAll('section');
     sections.forEach(function (section) {
@@ -516,6 +549,8 @@ window.addEventListener('scroll', () => {
         backToTopButton.style.display = 'none';
     }
 });
+
+        
 </script>
 </body>
 
